@@ -3,7 +3,7 @@
  <title>ロマン君の研究室</title>
  <style type="text/css">
 <!--
-.box {
+.box1 {
   padding: 0.5em 1em;
   margin: 2em 0;
   color: #000000;
@@ -14,15 +14,49 @@
   width: 600px;
   height: 100px;
 }
-.box div {
-  margin: 0; 
-  padding: 0;
+.box2 {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #000000;
+  background: #e3ffe6;/*背景色*/
+  border: double 5px #1dd62b;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.32);/*影*/
+  border-radius: 20px;/*角の丸み*/
+  width: 600px;
+  height: 100px;
+}
+.border1 {
+  display: block;
+  height: 100px;
+  width: 46px;
+  float: left;
+  writing-mode: vertical-lr;
+  border-right: solid 2px #1dc1d6;
+}
+.border2 {
+  display: block;
+  height: 100px;
+  width: 46px;
+  float: left;
+  writing-mode: vertical-lr;
+  border-right: solid 2px #1dd62b;
+}
+.header {
+  width: 100%;
+  height: 100px;
+  background: #504040;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 100px;
 }
 -->
  </style>
+ <script type="text/javascript" src="news.js"></script>
 </head>
-<body bgcolor="#ffffbf">
+<body bgcolor="#ffffbf" style="margin:0;">
  <center><font face="Courier" size="5">
+  
   <!--タイトル-->
   <br><br>
   <h1><!--
@@ -44,13 +78,13 @@
    <td><a href="https://www.youtube.com/channel/UCA7EHuo4-G9dQ3u8tCkFW5A">
     Youtube
    </a></td>
-   <td>　</td>
+   <!--td>　</td>
    <td><a href="https://twitter.com/_RomanGames_">
     <img src="img/twitter.png" alt="" width="24" height="24">
    </a></td>
    <td><a href="https://twitter.com/_RomanGames_">
     Twitter
-   </a></td>
+   </a></td-->
    <td>　</td>
    <td><a href="https://discord.gg/uTSTuaA">
     <img src="img/discord.png" alt="" width="24" height="24">
@@ -80,19 +114,26 @@
   <hr width="600px">
   
   <!--必見！-->
-  <div class="box">
-   <div style="display:block; height:100px; width:46px; float:left; writing-mode:vertical-lr; border-right:solid 2px #1dc1d6;">必見！</div>
-   <div style="height:100px; width:552px; float:right; text-align:left;">
-    <table><tr><td width="10">
-     
-    </td><td width="410" style="font-size:20px;"><b>
-     RomanGamesの自信作...<br>
-     「真顔のアクションver2.0」リリース！
-    </b></td><td>
-     <img src="img/真顔スクショ.png" alt="真顔のアクションver2.0" width="132" height="99">
-    </td></tr></table>
+  <a href="work/真顔のアクション.html">
+   <div class="box1">
+    <div class="border1">必見！</div>
+    <div style="height:100px; width:552px; float:right; text-align:left;">
+     <table><tr>
+      <td width="10">
+       
+      </td><td width="410" style="font-size:20px;"><b>
+       RomanGamesの自信作...<br>
+       「真顔のアクションver2.0」リリース！
+      </b></td><td rowspan="2">
+       <img src="img/真顔スクショ.png" alt="真顔のアクションver2.0" width="132" height="99">
+      </td>
+     </tr><tr>
+      <td></td>
+      <td align="right" style="color:808080;">更新日時:2019/12/15</td>
+     </tr></table>
+    </div>
    </div>
-  </div>
+  </a>
   
   <!--ボタン-->
   <table><tr>
@@ -103,8 +144,31 @@
    <td><a href="blog.html">
     <img src="img/ブログ.png" alt="ブログ" width="200" height="200">
    </a></td>
-  </tr></table><br>
-  <h3>最近の記事 (<a href="news.html">すべての記事を見る</a>)</h3><br>
+  </tr></table><br><br>
+  
+  <!--最近の記事-->
+  <h3>最近の記事 (<a href="news.html">すべての記事を見る</a>)</h3>
+  <a href="work/真顔のアクション.html">
+   <div class="box1">
+    <table><tr>
+     <td width="467" style="font-size:20px;"><b>
+      RomanGamesの自信作...<br>
+      「真顔のアクションver2.0」リリース！
+     </b></td><td rowspan="2">
+      <img src="img/真顔スクショ.png" alt="真顔のアクションver2.0" width="132" height="99">
+     </td>
+    </tr><tr>
+     <td align="right" style="color:808080;">更新日時:2019/12/15</td>
+    </tr></table>
+   </div>
+  </a>
+  
+  <br>
+  
+  <!--ヘッダー-->
+  <div class="header">
+   RomanGames: <a href="mailto:Japanese.RomanGames&#64;gmail.com?subject=お問合わせ&amp;body=%0d%0a%0d%0a--------上記本文--------%0d%0a%0d%0a今後RomanGamesに関する通知を受け取る(yes/no)→" style="font-color: #ffffff;">Japanese.RomanGames@gmail.com</a>
+  </div>
   
  </font></center>
 </body>
