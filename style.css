@@ -1,3 +1,13 @@
+.div {display: inline-block; _display: inline;}
+
+.center {
+  text-align: center;
+}
+.center * {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .box1 {
   padding: 0.5em 1em;
   margin: 2em 0;p
@@ -22,6 +32,7 @@
   height: 100px;
   text-decoration: none;
 }
+
 .border1 {
   display: block;
   height: 100px;
@@ -38,6 +49,7 @@
   writing-mode: vertical-lr;
   border-right: solid 2px #1dd62b;
 }
+
 .header {
   width: 100%;
   height: 100px;
