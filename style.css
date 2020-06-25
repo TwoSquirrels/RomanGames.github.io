@@ -14,6 +14,7 @@
   border: double 5px #1dc1d6;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.32);/*影*/
   border-radius: 20px;/*角の丸み*/
+  display: inline-block;
   width: 600px;
   height: 100px;
   text-decoration: none;
@@ -26,6 +27,7 @@
   border: double 5px #1dd62b;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.32);/*影*/
   border-radius: 20px;/*角の丸み*/
+  display: inline-block;
   width: 600px;
   height: 100px;
   text-decoration: none;
