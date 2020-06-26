@@ -1,3 +1,10 @@
+body {
+  margin: 0;
+  background-color: #ffffbf;
+  font-family: Courier;
+  font-size: x-large;
+}
+
 .center {
   text-align: center;
 }
