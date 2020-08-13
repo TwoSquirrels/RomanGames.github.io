@@ -59,7 +59,7 @@
 			let link = encodeURI("https://twitter.com/messages/compose?recipient_id=" + user_id + "&text=" + string);
 			
 			// 描画
-			let output = "生成されたリンク<br><a href=" + link + ">" + link + "</a><br>これをコピペして使おう！<br><br><br>";
+			let output = "生成されたリンク<br><a href=" + link + ">" + link + "</a><br>これをコピペして使おう！<br><br>追記 : フォローしている人以外からのDMを拒否してたらうまくいかないらしいです<br><br><br>";
 			document.getElementById('link').innerHTML = output;
 			
 		}
