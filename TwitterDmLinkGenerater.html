@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html><head>
 	
 	<title>DMリンクジェネレーター</title>
@@ -44,6 +44,17 @@
 			
 			//user_id = "1144147556919676933";
 			//string = "てすと";
+			
+			if (user_id == "" || string == "") {
+					document.getElementById('link').innerHTML = "ちゃんと入力してください<br><br><br>";
+					return;
+			}
+			for (let i = 0; i < user_id.length; i++) {
+				if (isNaN(user_id.charAt(i))) {
+					document.getElementById('link').innerHTML = "数字の方のIDを教えてください<br><br><br>";
+					return;
+				}
+			}
 			
 			let link = encodeURI("https://twitter.com/messages/compose?recipient_id=" + user_id + "&text=" + string);
 			
