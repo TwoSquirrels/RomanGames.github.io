@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html><head>
+	
+	<title>DMリンクジェネレーター</title>
+	
+</head><body bgcolor="#ffffbf" text="#000000" alink="#0000ff" vlink="#7f007f"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	
+	<h1>DMリンクジェネレーター</h1>
+	
+	<p>TwitterのDMへのリンクを生成します</p>
+	<p>プログラム等は適当に作ったのでぐちゃぐちゃでガバガバですw</p>
+	
+	<br>
+	
+	<p>
+		手順① : <a href="https://twitter.com/settings/your_twitter_data/account">ここ</a> にアクセスしてログインしてユーザーIDをコピーして、
+		<form name="form1">ユーザーID : <input type="text" name="user_id"></form>
+		にペーストします。<br>
+		<img src="https://media.discordapp.net/attachments/476596623649144834/743353214413570048/image0.png" width=50%>
+	</p>
+	
+	<br>
+	
+	<p>
+		手順② : ここにデフォルトにしたい文字を入れる
+		<form name="form2">デフォルトの文字 : <input type="text" name="string"></form>
+	<p>
+	
+	<br>
+	
+	<p>
+		手順③ : このボタンを押すだけ！<input type="button" value="生成" onclick="clickBtn()">
+	</p>
+	
+	<br><br>
+	
+	<div id="link"></div>
+	<script type="text/javascript">
+	<!--
+		function clickBtn() {
+			
+			let user_id = document.form1.user_id;
+			let string = document.form2.string;
+			
+			//user_id = "1144147556919676933";
+			//string = "てすと";
+			
+			let link = encodeURI("https://twitter.com/messages/compose?recipient_id=" + user_id + "&text=" + string);
+			
+			// 描画
+			let output = "生成されたリンク<br><a href=" + link + ">" + link + "</a><br>これをコピペして使おう！<br><br><br>";
+			document.getElementById('link').innerHTML = output;
+			
+		}
+		
+	//--> JavaScriptを有効にしてください。
+	</script>
+	<noscript>JavaScriptを有効にしてください。</noscript>
+	
+</body></html>
